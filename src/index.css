@@ -1,0 +1,105 @@
+:root{
+    --very-ligth-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --principal-green: #005758;
+    --principal-amarillo : #f7c548;
+    --white: #FFFFFF;
+    --black: #000000;
+    --sm:14px;
+    --md: 16px;
+    --lg:18px;
+}
+*{
+    box-sizing: border-box;
+}
+html{
+}
+body{
+    font-family: 'Quicksand' ;
+    margin:0;
+}
+
+/*header - navbar */
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 24px;
+    border-bottom: 1px solid var(--very-ligth-pink);
+}
+.menu{
+    display: none;
+    width: 20px;
+}
+.logo{
+    width: 50px;
+    margin: 12px;
+}
+.navbar-left ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+.navbar-left{
+    display: flex;
+    margin-left: 12px;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-left ul{
+    margin-left: 50px;
+}
+
+.navbar-left ul li a{
+    text-decoration: none;
+    color: var(--very-ligth-pink);
+    border: 1px solid var(--white);
+    padding: 8px 12px;
+    border-radius: 8px;
+    
+}
+.navbar-left ul li a:hover{            
+    color: var(--principal-amarillo);
+    border: 1px solid var(--principal-amarillo);            
+}
+.navbar-left h4{
+    font-size: 16px;
+}
+.navbar-rigth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-rigth button{
+    background: #005758;
+    color: white;
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+}
+.navbar-rigth button:hover{
+    cursor: pointer;
+    background: var(--principal-amarillo);
+}
+
+@media (max-width: 800px) {
+
+    /*header - navbar*/
+
+    .menu{
+        display: block;
+    }
+    .navbar-left ul{
+        display:none;
+    }
+    .navbar-left h4{
+        font-size: 12px;
+    }
+    .navbar-rigth button{
+        font-size: 12px;
+        /* padding: 4px 8px; */
+    }
+}
